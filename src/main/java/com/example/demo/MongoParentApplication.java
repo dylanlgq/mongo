@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MongoParentApplication {
 
 	public static void main(String[] args) {
+		//ceshi
 		SpringApplication.run(MongoParentApplication.class, args);
 	}
 }
