@@ -4,31 +4,35 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.iuv</groupId>
+		<groupId>com.dylan</groupId>
 		<artifactId>mongo-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.dylan</groupId>
-	<artifactId>mongo-test1</artifactId>
+	<artifactId>mongo-template-CRUD</artifactId>
 	<packaging>war</packaging>
-	<name>mongo-test1 Maven Webapp</name>
+	<name>mongo-template-CRUD Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-mongodb</artifactId> 
+			</dependency> -->
+		<!-- 原生的mongodb -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jta-narayana</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
-		<finalName>mongo-test1</finalName>
+		<finalName>mongo-template-CRUD</finalName>
 	</build>
 </project>

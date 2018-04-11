@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.dylan;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Test1ApplicationTests {
+public class MongoTemplateCRUDApplicationTests {
 
 	@Test
 	public void contextLoads() {
