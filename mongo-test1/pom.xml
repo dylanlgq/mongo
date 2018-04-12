@@ -8,7 +8,6 @@
 		<artifactId>mongo-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.dylan</groupId>
 	<artifactId>mongo-template-CRUD</artifactId>
 	<packaging>war</packaging>
 	<name>mongo-template-CRUD Maven Webapp</name>
