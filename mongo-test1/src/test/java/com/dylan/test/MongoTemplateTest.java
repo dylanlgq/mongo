@@ -34,7 +34,7 @@ public class MongoTemplateTest {
 
 	@Before
 	public void init() {
-		client = new MongoClient("39.108.79.138", 27017);
+		client = new MongoClient("127.0.0.1", 27017);
 		db = client.getDatabase("test");
 		doc = db.getCollection("users");
 	}
@@ -77,6 +77,9 @@ public class MongoTemplateTest {
 		doc.insertMany(Arrays.asList(doc1, doc2));
 	}
 
+	/**
+	 * 删除测试
+	 */
 	@Test
 	public void testDelete() {
 		// delete from users where username = 'iuv'
@@ -88,6 +91,9 @@ public class MongoTemplateTest {
 		log.info("删除的行数为：{}", deleteMany2.getDeletedCount());
 	}
 
+	/**
+	 * 更新测试
+	 */
 	@Test
 	public void testUpdate() {
 		// update users set age = 6 where username = 'tom'
@@ -101,6 +107,9 @@ public class MongoTemplateTest {
 		log.info("更新的行数为：{}", updateNum2.getModifiedCount());
 	}
 
+	/**
+	 * 查询测试
+	 */
 	@Test
 	public void testFind() {
 		final List<Document> ret = new ArrayList<>();
