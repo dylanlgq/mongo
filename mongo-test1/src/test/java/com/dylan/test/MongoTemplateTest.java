@@ -25,6 +25,12 @@ import com.mongodb.client.result.UpdateResult;
 import static com.mongodb.client.model.Filters.*;
 import static com.mongodb.client.model.Updates.*;
 
+/**
+ * 原生java驱动Document的操作测
+ * 
+ * @author dylan
+ * @date 2018年4月13日下午11:43:17
+ */
 public class MongoTemplateTest {
 	private static final Logger log = LoggerFactory.getLogger(MongoTemplateTest.class);
 
