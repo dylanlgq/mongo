@@ -1,11 +1,11 @@
-package com.dylan.pojo;
+package com.dylan.mongo.pojo;
 
 import java.math.BigDecimal;
 
 import org.bson.types.ObjectId;
-//import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-//@Document(collection = "users")
+@Document(collection = "users")
 public class User {
 
 	private ObjectId id;
